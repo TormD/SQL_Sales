@@ -1,0 +1,21 @@
+CREATE TABLE [dbo].Sales
+(
+	[salesid] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [productid] INT NULL, 
+    [datetime] DATETIME NULL, 
+    [customerid] INT NULL
+)
+
+
+SET IDENTITY_INSERT [dbo].[Sales] ON
+INSERT INTO [dbo].[Sales] ([salesid], [productid], [datetime], [customerid]) VALUES (1, 1, N'2015-05-18 00:00:00', 1)
+INSERT INTO [dbo].[Sales] ([salesid], [productid], [datetime], [customerid]) VALUES (2, 2, N'2016-05-17 00:00:00', 1)
+INSERT INTO [dbo].[Sales] ([salesid], [productid], [datetime], [customerid]) VALUES (3, 3, N'2016-05-17 00:00:00', 1)
+INSERT INTO [dbo].[Sales] ([salesid], [productid], [datetime], [customerid]) VALUES (4, 1, N'2016-04-17 00:00:00', 2)
+INSERT INTO [dbo].[Sales] ([salesid], [productid], [datetime], [customerid]) VALUES (5, 4, N'2015-03-16 00:00:00', 2)
+INSERT INTO [dbo].[Sales] ([salesid], [productid], [datetime], [customerid]) VALUES (6, 3, N'2015-02-16 00:00:00', 2)
+INSERT INTO [dbo].[Sales] ([salesid], [productid], [datetime], [customerid]) VALUES (7, 3, N'2016-01-18 00:00:00', 3)
+INSERT INTO [dbo].[Sales] ([salesid], [productid], [datetime], [customerid]) VALUES (8, 1, N'2016-01-18 00:00:00', 4)
+INSERT INTO [dbo].[Sales] ([salesid], [productid], [datetime], [customerid]) VALUES (9, 4, N'2016-01-18 00:00:00', 5)
+INSERT INTO [dbo].[Sales] ([salesid], [productid], [datetime], [customerid]) VALUES (10, 1, N'2016-01-18 00:00:00', 5)
+SET IDENTITY_INSERT [dbo].[Sales] OFF
